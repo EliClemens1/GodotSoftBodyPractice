@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://773ypb23onag"]
 
 [ext_resource type="Texture2D" uid="uid://dupyfw57rn1ot" path="res://icon.svg" id="1_idj7w"]
-[ext_resource type="PackedScene" uid="uid://c3h7rn3he2vx0" path="res://Prefabs/LargerSoftBody.tscn" id="2_idj7w"]
+[ext_resource type="PackedScene" uid="uid://qgut17gtirht" path="res://Prefabs/Guppy.tscn" id="2_idj7w"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rgh2o"]
 texture = ExtResource("1_idj7w")
@@ -152,5 +152,6 @@ layer_0/tile_data = PackedInt32Array(2424828, 0, 0, 2490364, 0, 1, 2555900, 0, 2
 position = Vector2(574.5, 609.25)
 shape = SubResource("RectangleShape2D_idj7w")
 
-[node name="Node2d" parent="." unique_id=1791586633 instance=ExtResource("2_idj7w")]
-position = Vector2(437, -41)
+[node name="Guppy" parent="." unique_id=1796483309 instance=ExtResource("2_idj7w")]
+position = Vector2(168, -344)
+scale = Vector2(0.75, 0.75)
