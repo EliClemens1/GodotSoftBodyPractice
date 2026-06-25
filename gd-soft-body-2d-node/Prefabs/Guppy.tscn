@@ -3,6 +3,9 @@
 [ext_resource type="Texture2D" uid="uid://dl1qnqdow4rnl" path="res://Assets/Sprites/idle.png" id="1_jr4vw"]
 [ext_resource type="Script" uid="uid://kol6k5y6rb8a" path="res://addons/softbody2d/softbody2d.gd" id="2_7urqt"]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_jr4vw"]
+radius = 176.34341
+
 [sub_resource type="SkeletonModification2DLookAt" id="SkeletonModification2DLookAt_jr4vw"]
 resource_local_to_scene = true
 bone_index = 0
@@ -638,6 +641,12 @@ resource_local_to_scene = true
 [node name="Guppy" type="Node2D" unique_id=1796483309]
 position = Vector2(849, -320)
 
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1096747324]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1347660719]
+position = Vector2(178, 155)
+shape = SubResource("CircleShape2D_jr4vw")
+
 [node name="SoftBody2D" type="Polygon2D" parent="." unique_id=477214775]
 texture = ExtResource("1_jr4vw")
 skeleton = NodePath("Skeleton2D")
@@ -649,6 +658,7 @@ script = ExtResource("2_7urqt")
 min_alpha = 0.01
 min_area = 0.81
 stiffness = 63.7
+damping = 16.01
 length_ratio = 2.0
 metadata/_custom_type_script = "uid://kol6k5y6rb8a"
 

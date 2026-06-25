@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://773ypb23onag"]
 
 [ext_resource type="Texture2D" uid="uid://dupyfw57rn1ot" path="res://icon.svg" id="1_idj7w"]
-[ext_resource type="PackedScene" uid="uid://qgut17gtirht" path="res://Prefabs/Guppy.tscn" id="2_idj7w"]
+[ext_resource type="PackedScene" uid="uid://cf11rysoyqp50" path="res://Prefabs/Player.tscn" id="2_idj7w"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rgh2o"]
 texture = ExtResource("1_idj7w")
@@ -136,6 +136,7 @@ texture = ExtResource("1_idj7w")
 
 [sub_resource type="TileSet" id="TileSet_pbw6q"]
 physics_layer_0/collision_layer = 1
+physics_layer_0/collision_mask = 6
 sources/0 = SubResource("TileSetAtlasSource_rgh2o")
 
 [node name="Main" type="Node2D" unique_id=320013944]
@@ -151,6 +152,6 @@ layer_0/tile_data = PackedInt32Array(2424828, 0, 0, 2490364, 0, 1, 2555900, 0, 2
 position = Vector2(369, 159)
 polygon = PackedVector2Array(11, 11, -38, 88, 75, 86)
 
-[node name="Guppy" parent="." unique_id=1796483309 instance=ExtResource("2_idj7w")]
-position = Vector2(168, -344)
-scale = Vector2(0.75, 0.75)
+[node name="Player" parent="." unique_id=1107525624 instance=ExtResource("2_idj7w")]
+position = Vector2(550, 503)
+scale = Vector2(0.5, 0.5)
